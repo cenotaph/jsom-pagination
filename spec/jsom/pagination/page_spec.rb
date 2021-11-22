@@ -7,14 +7,14 @@ module JSOM
         page = Page.new
 
         expect(page.number).to eq(1)
-        expect(page.size).to eq(20)
+        expect(page.size).to eq(10)
       end
 
       it 'sets defaults for nil values' do
         page = Page.new(size: nil, number: nil)
 
         expect(page.number).to eq(1)
-        expect(page.size).to eq(20)
+        expect(page.size).to eq(10)
       end
 
       it 'allows to override defaults with integers' do

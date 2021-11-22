@@ -6,7 +6,7 @@ require 'jsom/pagination/types'
 module JSOM
   module Pagination
     # A value object for requested page. Usage:
-    # JSOM::Pagination::Page.new(number: 1, size: 20)
+    # JSOM::Pagination::Page.new(number: 1, size: 10)
     # Works for string values and symbols, supports defaults.
     # Ignores extra keys
     # Sets 1 for negative values
@@ -31,7 +31,7 @@ module JSOM
       end
 
       attribute :number, Types::Params::Integer.default(1)
-      attribute :size, Types::Params::Integer.default(20)
+      attribute :size, Types::Params::Integer.default(10)
     end
   end
 end
