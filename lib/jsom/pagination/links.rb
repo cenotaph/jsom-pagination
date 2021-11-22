@@ -5,7 +5,7 @@ require 'addressable'
 module JSOM
   module Pagination
     class Links
-      DEFAULT_PAGE_SIZE = 20
+      DEFAULT_PAGE_SIZE = 10
 
       def to_h
         {
